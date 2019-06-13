@@ -1,0 +1,309 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="header">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <h2 style="margin:0"><span>film W<i class="fas fa-globe-europe"></i>RLD</span></h2>
+                </div>
+                <div class="home-icon"><img src="img/home-icon.png" alt=""></div>
+                <ul class="nav">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-camera-retro"></i>
+                            Thế giới phim
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">abc</a></li>
+                            <li><a href="#">abc</a></li>
+                            <li><a href="#">abc</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">abc</a></li>
+                                    <li><a href="#">abc</a></li>
+                                    <li><a href="#">abc</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-camera-retro"></i>
+                            Góc điện ảnh
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-camera-retro"></i>
+                            Khuyến mãi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-camera-retro"></i>
+                            Thành viên
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img class="mySlides" src="img/Slider(1).jpg" style="width: 100%">
+            <img class="mySlides" src="img/Slider(2).jpg" style="width:100%">
+            <img class="mySlides" src="img/Slider(3).png" style="width:100%">
+            <script>
+            var myIndex = 0;
+            carousel();
+                    
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+            
+            <div class="form-register">
+                <div class="btn">
+                    <Button class="active">Theo rạp</Button>
+                    <Button>Theo phim</Button>
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option value="rap">Chọn rạp</option>
+                    </select>
+                    <select>
+                        <option value="ngay">Chọn ngày</option>
+                    </select>
+                    <select>
+                        <option value="suat">Chọn suất</option>
+                    </select>
+                    <select>
+                        <option value="phim">Chọn phim</option>
+                    </select>
+                </div>
+                <div class="btn-apply">
+                    <button><i class="fas fa-dollar-sign"></i> Đặt vé</button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+                <h4>Danh sách khuyến mãi</h4>
+                <div class="main-card">
+                    <div class="main-item-card">
+                        <img src="img/promotion01.jpg">
+                    </div>
+                    <div class="main-item-card">
+                        <img src="img/promotion02.jpg">
+                    </div>
+                    <div class="main-item-card">
+                        <img src="img/promotion03.jpg">
+                    </div>
+                    <div class="main-item-card">
+                        <img src="img/promotion04.jpg">
+                    </div>
+                    <div class="main-item-card">
+                        <img src="img/promotion05.jpg">
+                    </div>
+                </div>
+                <div class="main-info">
+                    <div class="main-info-card">
+                        <div class="icon-card">
+                            <img src="img/time-icon.png" alt="">
+                        </div>
+                        <p>thời gian linh hoạt</p>
+                        <div class="info-card">
+                            <p>film World phục vụ quý khách với nhiều khung giờ khác nhau phù hợp với công việc, đảm bảo quý
+                                khách có những khoảng thời gian thật thư giãn với chúng tôi.
+                                <ul>
+                                    <li>Buổi sáng: 8h00 đến 11h30</li>
+                                    <li>Buổi chiều: 12h30 đến 17h00</li>
+                                    <li>Buổi tối: 18h00 đến 23h30</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-info-card">
+                        <div class="icon-card">
+                            <img src="img/money-icon.png" alt="">
+                        </div>
+                        <p>giá sinh viên</p>
+                        <div class="info-card">
+                            <p>Với mục đích phục vụ cho tất cả mọi người, mức giá film World đưa ra cho các dịch vụ tuyệt vời
+                                của mình là hết sức bất ngờ. Quý khách sẽ được phục vụ tốt nhất với mức giá rẻ chưa từng có.
+                                <dl>
+                                    <dt>Ngày thường</dt>
+                                    <dd>2D: 50k 3D: 80k</dd>
+                                    <dt>Ngày lễ, thứ 7, chủ nhật: 70k</dt>
+                                    <dd>2D: 70k 3D: 100k</dd>
+                                </dl>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-info-card">
+                        <div class="icon-card">
+                            <img src="img/quality-icon.png" alt="">
+                        </div>
+                        <p>chất lượng tuyệt đối</p>
+                        <div class="info-card">
+                            <p>"Tiền nào, của đó". film WORLD cam kết sẽ thực hiện tốt nhất các dịch vụ của mình đảm bảo quý
+                                khách sẽ cảm thấy hài lòng với số tiền mình bỏ ra.
+                            </p>
+                            <p>film WORLD áp dụng những công nghệ trình chiếu mới nhất, màn hình rộng chuẩn quốc tế, hình ảnh rõ
+                                nét, chất lượng tuyệt mỹ.
+                            </p>
+                            <p>film WORLD cam kết đảm bảo về sức khỏe về mắt với hệ thống kiến trúc ghế ngồi với khoảng cách phù
+                                hợp, an toàn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="first"><a href="#">Phim đang chiếu</a></p>
+                <p class="second"><a href="#">Phim sắp chiếu</a></p>
+                <hr>
+                <div class="main-movie">
+                    <div class="main-row">
+                        <div class="main-row-movie">
+                            <img src="img/1.jpg" alt="">
+                            <p>Vì sao vụt sáng</p>
+                        </div>
+                        <div class="main-row-movie">
+                            <img src="img/2.jpg" alt="">
+                            <p>Kế hoạch đổi chồng</p>
+                        </div>
+                        <div class="main-row-movie">
+                            <img src="img/3.jpg" alt="">
+                            <p>Chân nhỏ bạn ở đâu?</p>
+                        </div>
+                        <div class="main-row-movie">
+                            <img src="img/4.jpg" alt="">
+                            <p>Bào thai quỷ</p>
+                        </div>
+                    </div>
+                    <div class="main-row">
+                        <div class="main-row-movie">
+                            <img src="img/5.jpg" alt="">
+                            <p>Thiên thần công lý</p>
+                        </div>
+                        <div class="main-row-movie">
+                            <img src="img/6.jpg" alt="">
+                            <p>Đại chiến thành ANSI</p>
+                        </div>
+                        <div class="main-row-movie">
+                            <img src="img/7.jpg" alt="">
+                            <p>Lời nhắn của oan hồn</p>
+                        </div>
+                        <div class="main-row-movie">
+                            <img src="img/8.jpg" alt="">
+                            <p>Ngôi nhà có chiếc đồng hồ ma thuật</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_bottom">
+                        <div class="goc_binh_luan">
+                            <h3><u>Góc bình luận</u></h3><br>
+                            <div class="top">
+                                <div class="image">
+                                    <img src="img/entry01.jpg">
+                                </div>
+                                <div class="review">
+                                    <b>[Review] Bad Times At The El Royale: Trải Nghiệm Kinh Hoàng Ở Khách Sạn Hạng Sang</b><br>
+                                    <span class="button_like"><i class="fas fa-thumbs-up"></i> Thích 17</span>
+                                    <span class="button_user"><i class="fas fa-users"></i>3409</span>
+                                    <i class="far fa-star"></i> 5
+                                    <p>Kể khi cả chiếc quần sắp tụt và mấy múi cơ bụng "thần thánh" của Chris Hemsworth không đủ hấp dẫn bạn, <b>Bad Times At The El Royale</b> vẫn là một bộ <i>phim hay</i> đáng xem.</p>
+                                </div>
+                            </div>
+            
+                            <div class="top">
+                                    <div class="image">
+                                        <img src="img/entry02.jpg">
+                                    </div>
+                                    <div class="review">
+                                        <b>[Review] Bad Times At The El Royale: Trải Nghiệm Kinh Hoàng Ở Khách Sạn Hạng Sang</b><br>
+                                        <span class="button_like"><i class="fas fa-thumbs-up"></i> Thích 17</span>
+                                        <span class="button_user"><i class="fas fa-users"></i>3409</span>
+                                        <i class="far fa-star"></i> 5
+                                        <p>Quả không bõ công mong chờ, Người Bất Tử của đạo diễn Victor Vũ thực sự là bộ phim Việt hay nhất trong năm 2018 tính đến thời điểm hiện tại.</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="dien_anh">
+                            <h3><u>Điện ảnh</u></h3><br>
+                            <div class="top">
+                                <div class="image">
+                                    <img src="img/blog01.jpg">
+                                </div>
+                                <div class="news">
+                                    <b>Học địa lý nước Mỹ bằng phim kinh dị (Phần 1)</b><br>
+                                    <span class="button_like"><i class="fas fa-thumbs-up"></i> Thích 17</span>
+                                    <span class="button_user"><i class="fas fa-users"></i>3409</span>
+                                    <i class="far fa-star"></i> 5
+                                    <p>Vừa xem các bộ phim kinh dị nổi tiếng vừa biết thêm các tiểu bang của nước Mỹ. Một công đôi việc nhé</p>
+                                </div>
+                            </div>
+                            <div class="top">
+                                <div class="image">
+                                    <img src="img/blog02.jpg">
+                                </div>
+                                <div class="news">
+                                    <b>14 Rạp chiếu phim mà bạn nên ghé qua một lần trong đời</b><br>
+                                    <span class="button_like"><i class="fas fa-thumbs-up"></i> Thích 17</span>
+                                    <span class="button_user"><i class="fas fa-users"></i>3409</span>
+                                    <i class="far fa-star"></i> 5
+                                    <p>14 rạp chiếu phim trong danh sách dưới đây chắc chắn sẽ khiến bạn thay đổi khái niệm hoàn toàn!</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </main>
+        
+        <footer>
+            <div class="col1">
+                <b style="color:rgb(223, 221, 221)">GIỚI THIỆU</b><br><br>
+                <i class="fas fa-arrow-right"></i> VỀ CHÚNG TÔI<br>
+                <i class="fas fa-arrow-right"></i> THỎA THUẬN SỬ DỤNG<br>
+                <i class="fas fa-arrow-right"></i> QUY CHẾ HOẠT ĐỘNG<br>
+                <i class="fas fa-arrow-right"></i> CHÍNH SÁCH BẢO MẬT<br>
+            </div>
+            <div class="col2">
+                <b style="color:rgb(223, 221, 221)">GÓC ĐIỆN ẢNH</b><br><br>
+                <i class="fas fa-film"></i> THỂ LOẠI PHIM<br>
+                <i class="fas fa-film"></i> BÌNH LUẬN PHIM<br>
+                <i class="fas fa-film"></i> BLOG ĐIỆN ẢNH<br>
+                <i class="fas fa-film"></i> PHIM HAY THẲNG<br>
+            </div>
+            <div class="col3">
+                <b style="color:rgb(223, 221, 221)">HỖ TRỢ</b><br><br>
+                GÓP Ý<br>
+                SALES & SERVICES<br>
+                RẠP/GIÁ VÉ<br>
+                TUYỂN DỤNG<br>
+            </div>
+            <div class="col4">
+                <b style="color:rgb(223, 221, 221)">LIÊN KẾT</b><br><br>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-square"></i><br><br>
+                <b>DOWNLOAD APP</b><br>
+                <i class="fab fa-android"></i>
+                <i class="fab fa-apple"></i>
+            </div>
+        </footer>
+    </body>
+</html>
